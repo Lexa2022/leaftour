@@ -1,0 +1,123 @@
+body {
+  background-image: url("../img/GanesanBG.jpg");
+  background-attachment: scroll;
+  background-blend-mode: lighten;
+  object-fit: fill;
+  background-size: 100%;
+
+}
+
+.container1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  width: 60%;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  border-radius: 20px;
+  background-color: #00a35c;
+  opacity: 0.9;
+  border: solid black 5px;
+  margin-left: 18%;
+
+
+}
+
+.heading {
+
+  padding: 10px;
+  font-size: 200%;
+  text-align: center;
+  display: inline-block;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background-color: #00aeac;
+}
+
+.booking-details {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container1 .booking-details .deatails-box {
+  width: 820px;
+  margin-bottom: 15px;
+}
+
+.booking-details .deatails-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+
+}
+
+.booking-details .deatails-box input {
+  position: relative;
+  width: 100%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  transition: ease-out 0.5s;
+  height: 30px;
+
+}
+
+.booking-details .pax input {
+  position: relative;
+  width: 60%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  transition: ease-out 0.5s;
+  height: 30px;
+  padding: 5px;
+  margin-left: 280px;
+}
+
+input [type="text"] {
+  background-color: lightblue;
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 16px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+
+}
+
+input[type="Submit"] {
+  position: relative;
+  padding: 16px 32px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  background-color: #00aeac;
+  color: black;
+  border: 2px solid gray;
+  border-radius: 10px;
+
+
+}
+
+input[type="reset"] {
+  position: relative;
+  padding: 16px 32px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #00aeac;
+  color: black;
+  border: 2px solid gray;
+  border-radius: 10px;
+  align-items: center;
+
+
+}
