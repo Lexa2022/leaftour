@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leaf Tours</title>
+  <!--Favicon-->
+
+  <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+
+  <!--StyleSheet-->
+
+  <link rel="stylesheet" href="../css/styles.css" />
+  <!-- <link rel="stylesheet" href="../css/ganesan.css" /> -->
+  <!--<link rel="stylesheet" href="../css/joshua.css" /> -->
+  <!-- <link rel="stylesheet" href="../css/vianey.css" /> -->
+
+
+  <!--Fonts-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!--Fontawesome-->
+
+  <script src="https://kit.fontawesome.com/73f4446eec.js" crossorigin="anonymous"></script>
+
+  <!--JQuery CDN-->
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+  <!--JS-->
+  <script type="text/javascript" src="../js/validation.js"></script>
+
+</head>
+
+<body>
+
+  <!--Navigation Bar-->
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logoLTnav.png" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Attractions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="../Pages/clare.html">Clare</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../Pages/cork.html">Cork</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../Pages/dublin.html">Dublin</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../Pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Start Form-->
+
+  <div class="container1">
+
+
+    <div class="heading"> Booking Details </div>
+
+
+    <form name="booking" method="post" action="submission.html" onsubmit="return checkinfo()">
+
+
+      <div class="booking-details">
+
+
+        <div class="deatails-box">
+
+          <!--Name input feid-->
+
+          <span class="details">First Name: </span>
+          <input type="text" name="FirstName" id="fname">
+
+        </div>
+
+        <div class="deatails-box">
+
+          <!--SurName input feid-->
+
+          <span class="details">Surname : </span>
+          <input type="text" name="Surname" id="Surname">
+
+        </div>
+
+        <!--Contact input feid-->
+
+        <div class="deatails-box">
+          <span class="details">Contact: </span>
+          <input type="tel" name="Contact" id="Contact">
+
+        </div>
+
+        <!--Email input feid-->
+
+        <div class="deatails-box">
+          <span class="details">Email: </span>
+          <input type="text" name="First Name" id="Email">
+
+        </div>
+
+        <!--Destionation dropdown feid-->
+
+        <div class="deatails-box">
+          <span class="details"> Destination: </span>
+
+          <select id="select" onchange="calculateTotal();">
+
+            <option value="0.00">Select Destination</option>
+            <option value="15.00">Dublin</option>
+            <option value="20.00">Cork</option>
+            <option value="30.00">Galway</option>
+
+          </select>
+
+        </div>
+
+        <!--Ticket input feid-->
+
+        <div class="pax">
+
+          <span class="details">Tickets:</span>
+
+          <input type="number" id="qty" min="0" max="20" onchange="calculateTotal();">
+
+        </div>
+
+
+        <!--date picker feild feid-->
+
+        <div class="deatails-box">
+
+          <span class="details">Travel Date: </span>
+          <input type="Date" id="DatePick" required>
+
+        </div>
+
+
+
+        <!--Time select feid-->
+
+        <div class="deatails-box">
+
+          <span class="details">Time </span>
+          <input type="Time" required>
+
+        </div>
+
+
+
+        <!--Return Date picker feid-->
+
+        <div class="deatails-box">
+
+          <span class="details"> Return Date: </span>
+          <input type="Date" id="DatePick1" required>
+
+        </div>
+
+        <!--Total trip cost feid-->
+
+        <div class="deatails-box">
+
+          <span class="details">Trip Cost </span>
+          <input type="number" placeholder="0.00" id="price" readonly>
+
+        </div>
+
+        <!--Card accpet icons box-->
+
+        <div class="deatails-box">
+
+          <span class="details">Accepted Payment: </span>
+
+          <i class="fa-brands fa-cc-visa"></i>
+
+          <i class="fa-brands fa-cc-mastercard"></i>
+
+          <i class="fa-brands fa-cc-apple-pay"></i>
+
+
+          <!-- Buttons for confirmation to send form and reset form fields upon clicking cancel-->
+
+        </div>
+
+        <div class="button">
+
+          <input type="Submit" value="Confirm Booking">
+          <input type="Reset" value="Cancel">
+
+        </div>
+
+    </form>
+
+  </div>
+  </div>
+
+  <!--footer>-->
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="text-muted">Open source on:
+          <a href="https://github.com/Lexa2022/leaftour.git">
+            Github <i class="fa-brands fa-github"></i> </a></span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li class="ms-3">
+          <a class="text-muted" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+
+
+  <!--JS Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

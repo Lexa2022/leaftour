@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaf Tours</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/73f4446eec.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+
+  <body>
+    <!--Navigation Bar-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../img/logoLTnav.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/aboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Attractions
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="../Pages/clare.html"
+                      >Clare</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Pages/cork.html">Cork</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../Pages/dublin.html"
+                      >Dublin</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Content-->
+   <h2>About Us</h2>
+    <div class="container-xl">
+      <!--Image and text-->
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <img class="imgAbtUs" src="../img/aboutUs.jpg"  alt="Dublin" />
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <p class="txtAbtUs">
+            First founded in 2022, Leaf tours has been moulded by the very
+          definition of the believe in the four-leaf clover, representing love,
+          faith, hope and luck to bring the best of Ireland to the people of the
+          world! With great responsibility for delivering the best tourism
+          experience one could offer of Irish history to the curious mind. Our
+          tours are well organized to ensure that our members feel comfortable
+          and prepared before the tour for a stress-free travel experience. Our
+          services are offered to bring every individual an experience to
+          remember, may it be the first-time visiting Ireland or to take a break
+          from the hustle. Leaf tours ensures the convenience of safe travel
+          with our team of approachable tour guides. All our tour guides are
+          well equipped with knowledge and the history of Ireland. Leaf tours is
+          in direct collaboration with other tourism members of the different
+          counties within the region, making sure that all our tour members are
+          well attended. Our team believes that all our tour members are given
+          support throughout their journey with additional services upon request
+          and if required.<br>
+        </br>
+
+          Trust and Safe Journey:
+
+          Visitors safety and health on this pandemic situation is our prime responsibility and also always on our tour trip.
+          Quality and Good comfortable trip are the reward to our business in the name of Trust and reliability.
+          We are covering insurance as well to the visitors who needs to take in addition apart from the booking.
+          This will cover the COVID-19 ill-health and safer journey through in Ireland. 
+          Safe planning itinerary as per the weather consideration in Ireland as per the location choose to visit, 
+          safe guidance to the visitors and complimentary refreshment upon package trip. 
+        
+          </p>
+        </div>
+		</div> 
+      
+	  <h2> Trust and Safe Journey </h2>
+	  <div> 
+	  <p>Visitors safety and health on this pandemic situation is our prime responsibility and 
+			also always on our tour trip. Quality and Good comfortable trip are the reward to our 
+			business in the name of Trust and reliability. We are covering insurance as well to the 
+			visitors who needs to take in addition apart from the booking. This will cover the COVID-19 
+			ill-health and safer journey through in Ireland. 
+			Safe planning itinerary as per the weather consideration in Ireland as per the location 
+			choose to visit, safe guidance to the visitors and complimentary refreshment upon package trip. </p>
+		
+		</div>
+		
+        <iframe
+        width="100%"
+        height="500px"
+        src="https://www.youtube.com/embed/xUlGMBRms9M"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+     ></iframe>
+
+    <!--footer-->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="text-muted"
+            >Open source on:
+            <a href="https://github.com/vianeyAM/leafTours">
+              Github <i class="fa-brands fa-github"></i> </a
+          ></span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.youtube.com/"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!--JS Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
